@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizen-Politician Communication Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #e87777;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #e87777;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        section {
+            padding: 2rem;
+            margin: 1rem;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #e87777;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Citizen-Politician Communication Platform</h1>
+</header>
+
+<nav>
+    <a href="#admin-section">Admin</a>
+    <a href="#citizen-section">Citizen</a>
+    <a href="#politician-section">Politician</a>
+    <a href="#moderator-section">Moderator</a>
+</nav>
+
+<section id="admin-section">
+    <h2>Admin Dashboard</h2>
+    <p>Oversee platform operations, manage user roles, and ensure data integrity.</p>
+    <button>Manage Users</button>
+    <button>View Reports</button>
+</section>
+
+<section id="citizen-section">
+    <h2>Citizen Dashboard</h2>
+    <p>Report issues, provide feedback, and receive updates from politicians.</p>
+    <form>
+        <label for="issue">Report an Issue:</label><br>
+        <textarea id="issue" name="issue" rows="4" cols="50" placeholder="Describe the issue"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+    <h3>Feedback</h3>
+    <form>
+        <textarea name="feedback" rows="4" cols="50" placeholder="Provide your feedback"></textarea><br>
+        <button type="submit">Send Feedback</button>
+    </form>
+</section>
+
+<section id="politician-section">
+    <h2>Politician Dashboard</h2>
+    <p>Respond to citizen concerns, post updates, and engage in discussions.</p>
+    <form>
+        <label for="update">Post an Update:</label><br>
+        <textarea id="update" name="update" rows="4" cols="50" placeholder="Write an update"></textarea><br>
+        <button type="submit">Post Update</button>
+    </form>
+</section>
+
+<section id="moderator-section">
+    <h2>Moderator Dashboard</h2>
+    <p>Monitor interactions, ensure respectful communication, and resolve conflicts.</p>
+    <button>View Reports</button>
+    <button>Monitor Discussions</button>
+</section>
+
+<footer>
+    <p>&copy; 2024 Citizen-Politician Communication Platform</p>
+</footer>
+
+</body>
+</html>

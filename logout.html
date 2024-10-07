@@ -1,0 +1,11 @@
+<a href="javascript:void(0);" onclick="logout()">Logout</a>
+
+<script>
+    function logout() {
+        // Remove the JWT token from localStorage (or cookies)
+        localStorage.removeItem('authToken'); // Assuming the token is stored in localStorage
+        
+        // Redirect to the home page
+        window.location.href = '/home.html';  // Redirects to the home page
+    }
+</script>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Citizen-Politician Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E0F7FA; /* Light Blue Background */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2C3E50;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495E;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .container {
+            padding: 2rem;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+        .admin-options {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .option {
+            background-color: #FFFFFF; /* White Background for Boxes */
+            width: calc(30% - 20px);
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 8px;
+        }
+        .option h3 {
+            color: #2C3E50;
+            margin-bottom: 10px;
+        }
+        .option p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .option a {
+            background-color: #2C3E50;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .option a:hover {
+            background-color: #1A252F;
+        }
+        footer {
+            background-color: #2C3E50;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .option {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Admin Dashboard</h1>
+</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="javascript:void(0);" onclick="logout()">Logout</a>
+</nav>
+
+<div class="container">
+    <h2>Admin Control Panel</h2>
+    <div class="admin-options">
+        <div class="option">
+            <h3>Manage Users</h3>
+            <p>View, edit, or delete users from the platform.</p>
+            <a href="#">Go to User Management</a>
+        </div>
+        <div class="option">
+            <h3>Manage Issues</h3>
+            <p>Oversee citizen-reported issues and ensure resolutions.</p>
+            <a href="#">Go to Issue Management</a>
+        </div>
+        <div class="option">
+            <h3>Monitor Discussions</h3>
+            <p>Ensure that discussions between citizens and politicians are respectful.</p>
+            <a href="#">Go to Discussions</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Admin Dashboard | Citizen-Politician Communication Platform</p>
+</footer>
+
+<script>
+    function logout() {
+        // Clear any authentication or user role data
+        localStorage.clear();
+        // Redirect to home page
+        window.location.href = 'home.html';
+    }
+</script>
+
+</body>
+</html>
